@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website" {
-  bucket = "main-website"
+  bucket = "website-${var.name_postfix}"
   acl    = "public-read"
   tags   = var.default_tags
 
@@ -8,3 +8,4 @@ resource "aws_s3_bucket" "website" {
     error_document = "error.html"
   }
 }
+
