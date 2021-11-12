@@ -1,5 +1,5 @@
 variable "name_postfix" {
-  default = "riemervanderzee.com"
+  default = "riemervanderzee"
 }
 
 variable "default_tags" {
